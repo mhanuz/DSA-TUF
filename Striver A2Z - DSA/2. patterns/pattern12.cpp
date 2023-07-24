@@ -1,30 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void get_pattern(int num)
+void get_pattern(int n)
 {
-	for(int i=1; i<=num; i++)
+	for(int i=1; i<=n; i++)
 	{
 		for(int j=1; j<=i; j++)
 		{
-			cout << j;
+			cout << j << " ";
 		}
-		for(int k=1; k<=(num*2)-(i*2); k++)
+
+		for (int l=1; l<=((n*2)-(i*2))*2; l++)
 		{
-			cout << "*";
+			cout << " ";
 		}
-		for(int l=i; l>=1; l-- )
+
+		for(int k=i; k>=1; k--)
 		{
-			cout << l;
+			cout << k << " ";
 		}
 		cout << endl;
 	}
+
 }
 
 int main()
 {
-	int number;
-	cin >> number;
-	get_pattern(number);
+	int n;
+	cin >> n;
+	get_pattern(n);
 	return 0;
 }

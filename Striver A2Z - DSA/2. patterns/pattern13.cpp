@@ -1,15 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void get_pattern(int num)
-{
-	int range_of_num=0;
-	for(int i=1; i<=num; i++)
-	{
-		range_of_num += i;
-	}
-	int c = 1;
-	for(int j=1; j<=num; j++)
+void get_pattern(int n){
+	int c=1;
+	for(int j=1; j<=n; j++)
 	{
 		for(int k=1; k<=j; k++)
 		{
@@ -18,6 +12,7 @@ void get_pattern(int num)
 		}
 		cout << endl;
 	}
+	
 }
 
 int main()

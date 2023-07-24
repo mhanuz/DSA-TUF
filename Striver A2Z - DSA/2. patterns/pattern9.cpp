@@ -1,36 +1,36 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void get_pattern(int num)
+void get_pattern(int n)
 {
-	// Upper triangle
-	for(int i=1; i<=num; i++)
+	for(int i=0; i<n; i++)
 	{
-		for(int j=1; j<=num-i; j++)
+		for(int j=i+1; j<n; j++)
 		{
 			cout << " ";
 		}
-		for(int k=1; k<=2*i-1; k++)
+		for(int k=0; k<=i; k++)
 		{
-			cout << "*";
+			cout << "*" << " ";
 		}
 		cout << endl;
 	}
 
-	//lower triangle
-	for(int i=1; i<=num; i++)
+	for(int i=0; i<n; i++)
 	{
-		for(int j=1; j<i; j++)
+		for(int j=1; j<=i; j++)
 		{
 			cout << " ";
 		}
-		for(int k=1; k<=num*2 - (i*2-1); k++)
+		for(int k=n; k>i; k--)
 		{
-			cout << "*";
+			cout<< "*" << " ";
 		}
 		cout << endl;
 	}
+	
 }
+
 
 int main()
 {

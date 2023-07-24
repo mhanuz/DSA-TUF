@@ -9,13 +9,13 @@ void get_pattern(int num)
 			{
 				if((i%2==0) && (j%2==1))
 				{
-					cout << 0;
+					cout << 0 << " ";
 				}
 				else if((i%2==1) && (j%2==0))
 				{
-					cout << 0;
+					cout << 0 << " ";
 				}
-				else cout << 1;
+				else cout << 1 << " ";
 			}
 			cout << endl;
 		}

@@ -3,20 +3,18 @@ using namespace std;
 
 void get_pattern(int n)
 {
-	for(int i=0; i<n; i++)
+	for(int i=1; i<=n; i++)
 	{
-		for(int k=1; k<=i; k++)
+		for(int j=65; j<65+i; j++)
 		{
-			cout << " ";
-		}
-		for(int j=1; j<=(2*n)-(2*i+1); j++)
-		{
-			cout << "*";
+			cout << char(j);
 		}
 		cout << endl;
 	}
 }
-int main(){
+
+int main()
+{
 	int number;
 	cin >> number;
 	get_pattern(number);

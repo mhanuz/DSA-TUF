@@ -3,9 +3,9 @@ using namespace std;
 
 void get_pattern(int num)
 {
-	for(int i=1; i<=num; i++)
+	for(int i=1; i<=n; i++)
 	{
-		for(int j=1; j<=num; j++)
+		for(int j=1; j<=n; j++)
 		{
 			cout << "*";
 		}
