@@ -1,19 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 void get_pattern(int n)
 {
 	for(int i=1; i<=n; i++)
 	{
-		int ascii_value=65;
-		for(int j=n; j>=i; j--)
+		for(int j=1; j<=n; j++)
 		{
-			cout << char(ascii_value) << " ";
-			ascii_value++;
+			if(i==1 || i==n || j==1 || j==n) cout << "*";	
+
+			else cout << " ";
 		}
 		cout << endl;
 	}
 }
+
 
 int main()
 {

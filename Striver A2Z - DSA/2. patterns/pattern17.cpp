@@ -5,11 +5,17 @@ void get_pattern(int n)
 {
 	for(int i=1; i<=n; i++)
 	{
-		int ascii_value=65;
-		for(int j=n; j>=i; j--)
+		// loop for spaces
+		for(int j=1; j<=n-i; j++)
 		{
-			cout << char(ascii_value) << " ";
-			ascii_value++;
+			cout << " ";
+		}
+		char ch='A';
+		for(int k=1; k<=(i*2)-1; k++)
+		{
+			cout << ch;
+			if(k<i) ch++;
+			else ch--;
 		}
 		cout << endl;
 	}

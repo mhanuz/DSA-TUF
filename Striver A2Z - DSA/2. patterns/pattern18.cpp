@@ -5,11 +5,11 @@ void get_pattern(int n)
 {
 	for(int i=1; i<=n; i++)
 	{
-		int ascii_value=65;
-		for(int j=n; j>=i; j--)
+		int starting_char = 64+n;
+		for(int j=1; j<=i; j++)
 		{
-			cout << char(ascii_value) << " ";
-			ascii_value++;
+			cout << (char)starting_char << " ";
+			starting_char--;
 		}
 		cout << endl;
 	}
