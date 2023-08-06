@@ -1,21 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void get_pattern(int num)
+void get_pattern(int n)
 {
-	int starts;
-	for(int i=1; i<=2*num-1; i++)
+	int stars;
+	for(int i=1; i<=n*2-1; i++)
 	{
-		starts = i;
-		if(i > num) starts = 2*num - i;
-		for(int j=1; j<=starts; j++)
+		stars=i;
+		if(i>n) stars = n*2-i;
+		for(int j=1; j<=stars; j++)
 		{
 			cout << "*";
 		}
-		
 		cout << endl;
 	}
-
 }
 int main()
 {
